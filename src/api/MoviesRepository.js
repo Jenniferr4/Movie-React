@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export class MoviesRepository{
     
-    url = "http://localhost:8080/movies/";
+    url = "http://localhost:8080/movies";
     
 
     getMoviesById(id){
@@ -33,7 +33,7 @@ export class MoviesRepository{
 
 
 
-    updateMove(id, movie){
+    updateMovie(id, movie){
         return new Promise((resolve, reject) => {
             axios.put(`${this.url}/${id}`, movie)
             .then(x => resolve(x.data))
@@ -56,7 +56,7 @@ export class MoviesRepository{
         });
     }
 
-    deleteAccount(movieId){
+    deleteMovie(movieId){
         return new Promise((resolve, reject) => {
             axios.delete(`${this.url}/${movieId}`)
             .then(x => resolve(x.data))
