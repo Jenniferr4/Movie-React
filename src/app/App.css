@@ -27,3 +27,10 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+#mainHeader{
+  background-color: rgba(51, 51, 51, 0.74);
+  padding: 10px;
+  color: white;
+  
+}

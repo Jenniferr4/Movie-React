@@ -27,7 +27,7 @@ export const Movies = props => {
       <tr key={i}>
         <th scope="col"><Link to={'/edit/' + x.id}> {x.title} </Link></th>
         <th scope="col">{x.director}</th>
-        <th scope="col">{x.Protagonist}</th>
+        <th scope="col">{x.protagonist}</th>
         <th scope="col">{x.year}</th>
         <th scope="col">{x.review}</th>
         <th>

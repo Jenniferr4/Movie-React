@@ -17,7 +17,7 @@ export class MoviesDashboard extends React.Component {
         <Link to ="/new" className="btn btn-sm btn-success float-right">
             New Movie
         </Link>
-      <h1>Movies Dashboard</h1>
+      <h1 id="mainHeader">Movies Dashboard</h1>
       <div className="clear-fix"></div>
       <Movies movies={this.state.movies}
                     onDelete={x => this.onDelete(x)}
