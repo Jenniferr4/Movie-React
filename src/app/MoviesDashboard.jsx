@@ -14,7 +14,7 @@ export class MoviesDashboard extends React.Component {
   render() {
     return <>
     <div className="container">
-        <Link to ="/new" className="btn btn-sm btn-success float-right">
+        <Link to ="/new" id="buttonNewMovie" className="btn btn-sm btn-success float-right">
             New Movie
         </Link>
       <h1 id="mainHeader">Movies Dashboard</h1>

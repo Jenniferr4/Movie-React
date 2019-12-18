@@ -32,5 +32,14 @@ li a:hover {
   background-color: rgba(51, 51, 51, 0.74);
   padding: 10px;
   color: white;
-  
+
+}
+#buttonNewMovie{
+  margin:10px;
+}
+
+#tableHeader{
+  background-color: rgb(33, 108, 248);
+  color: aliceblue;
+  border: rgb(60, 160, 248) 3px solid;
 }

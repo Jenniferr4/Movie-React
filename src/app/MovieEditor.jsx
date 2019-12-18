@@ -18,11 +18,12 @@ export class MovieEditor extends React.Component{
     render(){
         return <>
             {this.state.redirect && <Redirect to="/" /> }
+            
+            <h1 id="editor">Movie Editor</h1>
             <form className="container">
-                <h1>Movie Editor</h1>
                 <div className="form-group">
                     <label htmlFor="title">
-                        Name
+                        Title
                     </label>
                     <input type="text"
                             id="title"
@@ -35,7 +36,7 @@ export class MovieEditor extends React.Component{
 
                 <div className="form-group">
                     <label htmlFor="director">
-                        director
+                        Director
                     </label>
                     <input type="text"
                             id="director"
@@ -48,7 +49,7 @@ export class MovieEditor extends React.Component{
                 
                 <div className="form-group">
                     <label htmlFor="protagonist">
-                        protagonist
+                        Protagonist
                     </label>
                     <input type="text"
                             id="protagonist"
@@ -61,7 +62,7 @@ export class MovieEditor extends React.Component{
 
                 <div className="form-group">
                     <label htmlFor="year">
-                        year
+                        Year
                     </label>
                     <input type="text"
                             id="year"
@@ -74,7 +75,7 @@ export class MovieEditor extends React.Component{
 
                 <div className="form-group">
                     <label htmlFor="review">
-                        review
+                        Review
                     </label>
                     <input type="text"
                             id="review"
@@ -86,7 +87,7 @@ export class MovieEditor extends React.Component{
                 </div>               
                 
                <div>
-                    <button type="button"  className="btn btn-primary btn-lg btn-block" 
+                    <button id="saveButton" type="button"  className="btn btn-primary btn-lg btn-block" 
                     onClick={ e => this.onSubmit() }>
 
                         Save
